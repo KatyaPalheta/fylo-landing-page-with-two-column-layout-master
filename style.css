@@ -1,0 +1,89 @@
+/*@import url("caminho do arquivo")*/
+:root {
+    --fonte-raleway:'Raleway', sans-serif;
+    /*Headings, Call-to-actions,Header Navigation, 400, 700*/
+    --fonte-open_sans:'Open Sans', sans-serif;
+    /*boby, 400*/
+    --cor-um: hsl(243, 87%, 12%);
+    --cor-dois: hsl(238, 22%, 44%);
+    --cor-tres: hsl(224, 93%, 58%);
+    --cor-quatro: hsl(170, 45%, 43%);
+    --cor-cinco: hsl(240, 75%, 98%);
+    --cor-seis: hsl(0, 0%, 75%);
+    --cor-sete: rgb(246, 86, 145, 1);
+}
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    font-family: var(--fonte-raleway);
+    
+}
+header{
+    display: flex;
+    padding: 20px;
+    justify-content: space-between;
+    align-items: center;
+}
+header img{
+    width: 90px;
+    height: 28px;
+}
+nav a{
+    margin: auto 10px;
+    font-weight: 800;
+    font-size: 12px;
+}
+main{
+    display: grid;
+    justify-items: center;
+}
+.principal{
+    display: grid;
+    justify-items: center;
+}
+.principal img{
+    width: 90vw;
+    padding: 30px;
+    margin: 20px auto;
+}
+.principal-titulo{
+    font-family: var(--fonte-open_sans);
+    font-size: 24px;
+    font-weight: 800;
+    padding: 20px;
+    text-align: center;
+}
+.principal-paragrafo{
+    padding: 20px;
+    width: 90vw;
+    font-size: 14px;
+    font-weight: 700;
+    text-align: center;
+    line-height: 1.5em;
+}
+#botao_started_principal{
+    background-color: var(--cor-tres);
+    width: 80vw;
+    margin: 20px;
+    border-radius: 3px;
+    border: none;
+    color: #ffffff;
+    font-size: 12px;
+    font-weight: 700;
+    padding: 10px;
+}
+#email{
+    width: 80vw;
+    margin: 20px 20px 0px 20px;
+    border-radius: 3px;
+    border: 1px solid #000000;
+    font-size: 12px;
+    font-weight: 700;
+    padding: 10px;
+}
+#email:focus-visible {
+            outline: rgb(246, 86, 145, 1) auto 1px;
+}

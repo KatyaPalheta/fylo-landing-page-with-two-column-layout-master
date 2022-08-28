@@ -64,6 +64,11 @@ main{
     text-align: center;
     line-height: 1.5em;
 }
+
+#form_email{
+    display: grid;
+    justify-content: center;
+}
 #send_email{
     background-color: var(--cor-tres);
     width: 80vw;
@@ -73,7 +78,7 @@ main{
     color: #ffffff;
     font-size: 12px;
     font-weight: 700;
-    padding: 10px;
+    padding: 12px;
     cursor: pointer;
 }
 .email{
@@ -93,8 +98,110 @@ main{
     visibility: hidden;
     font-size: 12px;
     color:var(--cor-sete);
-    margin-left: 10%;
+    margin-left: 5%;
+    padding: 5px;
 }
 .mensagem_erro_email{
     visibility: visible;
+}
+.decoracao{
+    background-image: url('/assets/images/bg-curve-mobile.svg');
+    background-size: auto;
+    background-repeat: no-repeat;
+    margin-top: 70px;
+    height:40px;
+    width: 100%;
+}
+.depoimento{
+    display: grid;
+    width: 100%;
+    justify-items: center;
+    background-color:#f8f8fe;
+}
+.depoimento img{
+    width: 90vw;
+    padding: 30px;
+    margin: 20px auto;
+}
+.depoimento-titulo {
+    font-family: var(--fonte-open_sans);
+    font-size: 14px;
+    font-weight: 800;
+    padding: 20px;
+    text-align: center;
+}
+.depoimento-paragrafo {
+    padding: 10px;
+    width: 90vw;
+    font-size: 13px;
+    font-weight: 400;
+    text-align: left;
+    line-height: 1.5em;
+}
+.see_how{
+    color: var(--cor-quatro);
+    border-bottom: 1px solid var(--cor-quatro);
+    width: auto;
+    font-size: 14px;
+    padding-bottom: 5px;
+    margin: 20px;
+    display: flex;
+    gap: 5px;
+    cursor: pointer;
+}
+.seta{
+    display: grid;
+    align-content: center;
+    justify-content:center ;
+    color: #ffffff;
+    background-color: var(--cor-quatro);
+    border-radius: 50%;
+    width:1rem;
+    height: 1rem;
+    cursor: pointer;
+}
+.depoimento_kyle{
+    padding: 20px;
+    width: 70%;
+    background-color: #ffffff;
+    box-shadow: -1px 0px 9px 6px rgba(0, 0, 0, 0.2);
+    margin-bottom: 50px;
+    }
+
+.citacao{
+    font-size: 28px;
+    height: 20px;
+    padding-left: 15px;}
+    
+.depoimento_citacao{
+    padding: 15px;
+    font-size:8px;
+    font-weight: 400;
+    text-align: left;
+    line-height: 1.5em;
+    
+}
+
+.info_kyle{
+    display: flex;
+    align-items: center;
+    padding-left: 15px;
+}
+.kyle{
+    width: 1.5rem;
+    height: 1.5rem;
+    background-image: url('/assets/images/avatar-testimonial.jpg');
+    background-size: contain;
+    border-radius: 50%;
+    display: flex;
+
+   
+}
+.dados_kyle{
+    font-size: 8px;
+    padding: 5px;
+    font-weight: 400;
+    text-align: left;
+    line-height: 1.5em;
+    width: 100px;
 }

@@ -64,26 +64,37 @@ main{
     text-align: center;
     line-height: 1.5em;
 }
-#botao_started_principal{
+#send_email{
     background-color: var(--cor-tres);
     width: 80vw;
-    margin: 20px;
+    margin: 0px 20px;
     border-radius: 3px;
     border: none;
     color: #ffffff;
     font-size: 12px;
     font-weight: 700;
     padding: 10px;
+    cursor: pointer;
 }
-#email{
+.email{
     width: 80vw;
     margin: 20px 20px 0px 20px;
     border-radius: 3px;
-    border: 1px solid #000000;
+    border: 1px solid black;
     font-size: 12px;
     font-weight: 700;
     padding: 10px;
+    outline: none;
 }
-#email:focus-visible {
-            outline: rgb(246, 86, 145, 1) auto 1px;
+.erro_email {
+    border-color: var(--cor-sete);
+}
+.mensagem_email{
+    visibility: hidden;
+    font-size: 12px;
+    color:var(--cor-sete);
+    margin-left: 10%;
+}
+.mensagem_erro_email{
+    visibility: visible;
 }

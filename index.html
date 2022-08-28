@@ -36,29 +36,36 @@
 					wherever you need, share and collaborate with friends, family, and
 					co-workers.
 				</p>
-				<form name="principal_get-started" class="principal_get-started"></form>
-				<label for="email">
+				<form
+					name="principal_get-started"
+					class="principal_get-started"
+					id="form_email"
+					novalidate
+				>
 					<input
 						type="email"
+						onkeyup="teste()"
 						name="principal_get-started"
 						id="email"
+						class="email"
 						placeholder="Enter your email.."
 						autocomplete="off"
 						required
 					/>
-				</label>
-				<input
-					type="submit"
-					name="principal_get-started"
-					id="botao_started_principal"
-					value="Get Started"
-					;
-				/>
+					<span id="mensagem_email" class="mensagem_email">Please check email</span>
+					<input
+						type="submit"
+						name="principal_get-started"
+						id="send_email"
+						value="Get Started"
+						disabled
+					/>
+				</form>
 			</section>
-			<section class="descricao"></section>
+			<section class="depoimento"></section>
 			<section class="inscricao"></section>
 		</main>
 		<footer></footer>
-		<script src="/assets/scrypt.js"></script>
+		<script src="/assets/script/scrypt.js"></script>
 	</body>
 </html>

@@ -1,6 +1,6 @@
-# L Fylo landing page with two column layout solution
+# Fylo landing page with two column layout solution
 
-Essa é a solução para o desafio 
+Essa é a solução para o desafio landing Fylo com desafio de layout de duas colunas
 
 ## Índice
 
@@ -18,7 +18,7 @@ Essa é a solução para o desafio
 
 ## Visão geral
 
-Esse é o projeto final criado ao longo das aulas do curso Curso de HTML e CSS: responsividade com mobile-first
+Esse é o projeto final criado como solução ao desafio do site front-end mentor
 
 ### O desafio
 
@@ -27,14 +27,16 @@ Os usuários devem ser capazes de:
 
 - Visualize o layout ideal para o site, dependendo do tamanho da tela do dispositivo
 - Veja os estados de foco para todos os elementos interativos na página
+- ver mensagem de erro ao incluir um valor de e-mail inválido
 
 ### Captura de tela
 
-![Resultado final](/assets/img/mobile.png)
+![Resultado final desktop](/assets/images/desktop.png)
+![Resultado final mobile](/assets/images/mobile.png)
 
 ### Links
 
-- URL do site ao vivo: (<     >)
+- URL do site ao vivo: (<https://astounding-gingersnap-83e7a1.netlify.app/>)
 
 ## Meu processo
 
@@ -46,20 +48,30 @@ Demorei cerca de 25h de trabalho para concluir o desafio
 - Propriedades personalizadas de CSS
 - Flexbox
 - Grade CSS
-- Uso de API - swiper-bundle - carrossel de imagens
+- Uso de script Javascript
+- Edição de svg, manipulação co metodo hover
 
 ### O que eu aprendi
 
-Aprendi bastante a respeito de layout responsivo aplicanto muitos principios estudados nos cursos que eu concluí nos ultimos dias
+Aprendi bastante a respeito de layout responsivo aplicanto muitos principios estudados nos cursos que eu concluí nos ultimos dias. Edição de svg, manipulação co metodo hover
 
 Para ver como você pode adicionar snippets de código, veja abaixo:
 
-``` html
-
-
-
-
+``` Js
+function teste() {
+ const valida = email.validity.valid;
+ console.log(valida);
+ if (valida === false) {
+  email.classList.add('erro_email');
+  span.classList.add('mensagem_erro_email');
+ } else {
+  email.classList.remove('erro_email');
+  span.classList.remove('mensagem_erro_email');
+  botao.disabled = false;
+ }
+}
 ```
+Provavelmente existem formas mais inteligentes de concluir, mas eu creio que assim funciona
 
 ### Desenvolvimento contínuo
 

@@ -16,16 +16,28 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    justify-content: center;
     text-decoration: none;
     list-style: none;
     font-family: var(--fonte-raleway);
-    
+}
+body{
+    width: 375px;
+    margin-left: auto;
+    margin-right: auto;
+    display: grid;
+    justify-items: center;
+}
+section{
+    width: 375px;
+    padding-top: 35px;
+    padding-bottom: 35px;
 }
 header{
     display: flex;
     padding: 20px;
     justify-content: space-between;
-    align-items: center;
+    align-items: center;   
 }
 header img{
     width: 90px;
@@ -36,54 +48,53 @@ nav a{
     font-weight: 800;
     font-size: 12px;
 }
-main{
-    display: grid;
-    justify-items: center;
-}
+
 .principal{
     display: grid;
     justify-items: center;
 }
 .principal img{
-    width: 90vw;
+    width: 375px;
     padding: 30px;
     margin: 20px auto;
 }
 .principal-titulo{
     font-family: var(--fonte-open_sans);
     font-size: 24px;
+    width: 300px;
+    margin: auto;
     font-weight: 800;
     padding: 20px;
     text-align: center;
 }
 .principal-paragrafo{
     padding: 20px;
-    width: 90vw;
+    width: 300px;
+    margin: auto;
     font-size: 14px;
     font-weight: 700;
     text-align: center;
     line-height: 1.5em;
 }
-
-#form_email{
+#form_email, #form_email2{
     display: grid;
     justify-content: center;
 }
-#send_email{
+#send_email, #send_email2{
     background-color: var(--cor-tres);
-    width: 80vw;
+    width: 300px;
     margin: 0px 20px;
     border-radius: 3px;
     border: none;
-    color: #ffffff;
+    color: var(--cor-cinco);
     font-size: 12px;
     font-weight: 700;
     padding: 12px;
     cursor: pointer;
 }
-.email{
-    width: 80vw;
-    margin: 20px 20px 0px 20px;
+.email, .email2{
+    width: 300px;
+    margin: 20px auto 0px auto;
     border-radius: 3px;
     border: 1px solid black;
     font-size: 12px;
@@ -94,7 +105,7 @@ main{
 .erro_email {
     border-color: var(--cor-sete);
 }
-.mensagem_email{
+#mensagem_email, #mensagem_email2{
     visibility: hidden;
     font-size: 12px;
     color:var(--cor-sete);
@@ -110,39 +121,40 @@ main{
     background-repeat: no-repeat;
     margin-top: 70px;
     height:40px;
-    width: 100%;
+    width: 100vh;
 }
 .depoimento{
     display: grid;
-    width: 100%;
     justify-items: center;
-    background-color:#f8f8fe;
+    text-align: left;
+    margin-left: auto;
+    margin-right: auto;
+    background-color:var(--cor-cinco);
 }
 .depoimento img{
-    width: 90vw;
+    width: 300px;
     padding: 30px;
     margin: 20px auto;
 }
-.depoimento-titulo {
+.secundario-titulo {
     font-family: var(--fonte-open_sans);
     font-size: 14px;
     font-weight: 800;
     padding: 20px;
     text-align: center;
 }
-.depoimento-paragrafo {
+.secundario-paragrafo {
     padding: 10px;
-    width: 90vw;
+    width: 300px;
     font-size: 13px;
     font-weight: 400;
-    text-align: left;
     line-height: 1.5em;
 }
 .see_how{
     color: var(--cor-quatro);
-    border-bottom: 1px solid var(--cor-quatro);
+    border-bottom: 1px solid var(--cor-cinco);
     width: auto;
-    font-size: 14px;
+    font-size: 12px;
     padding-bottom: 5px;
     margin: 20px;
     display: flex;
@@ -153,7 +165,7 @@ main{
     display: grid;
     align-content: center;
     justify-content:center ;
-    color: #ffffff;
+    color: var(--cor-cinco);
     background-color: var(--cor-quatro);
     border-radius: 50%;
     width:1rem;
@@ -161,27 +173,22 @@ main{
     cursor: pointer;
 }
 .depoimento_kyle{
-    padding: 20px;
+    padding: 5px;
     width: 70%;
-    background-color: #ffffff;
+    background-color: var(--cor-cinco);
     box-shadow: -1px 0px 9px 6px rgba(0, 0, 0, 0.2);
-    margin-bottom: 50px;
     }
-
 .citacao{
     font-size: 28px;
     height: 20px;
-    padding-left: 15px;}
-    
+    padding-left: 15px;} 
 .depoimento_citacao{
     padding: 15px;
     font-size:8px;
     font-weight: 400;
     text-align: left;
-    line-height: 1.5em;
-    
+    line-height: 1.5em;   
 }
-
 .info_kyle{
     display: flex;
     align-items: center;
@@ -194,8 +201,6 @@ main{
     background-size: contain;
     border-radius: 50%;
     display: flex;
-
-   
 }
 .dados_kyle{
     font-size: 8px;
@@ -204,4 +209,92 @@ main{
     text-align: left;
     line-height: 1.5em;
     width: 100px;
+}
+.inscricao{
+    background-color: var(--cor-dois);
+    display: grid;
+    justify-content: center;
+    color: var(--cor-cinco);
+    text-align: center;
+}
+.quarto_card{
+    background-color: var(--cor-um);
+    padding: 30px;
+    display: grid;
+    gap: 30px;
+    font-size: 12px;
+    color: var(--cor-cinco);
+}
+svg path{
+   fill: var(--cor-cinco);
+}
+.contatos{
+    display: grid;
+    gap: 10px;
+    grid-template-columns: auto 1fr;
+}
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0
+}
+li{
+    line-height: 2rem;
+}
+.attribution{
+    text-align: center;
+    font-size: 10px;
+    line-height: 1.2rem;
+}
+.redes_sociais{
+   border: 1px solid var(--cor-cinco);
+   width: 20px;
+   height: 20px;
+   border-radius: 50%;
+   padding: 4px;
+}
+.icones_redes {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+    width: fit-content;
+    margin: auto;
+}
+.primeiro_card{
+    width: 100vh;
+    display: grid;
+    justify-content: center;
+}
+.segundo_card{
+    width: 100vh;
+    display: grid;
+    justify-content: center;
+    background-color: var(--cor-cinco);
+}
+.guard_decoracao{
+    width: 100vh;
+    display: grid;
+    justify-content: center;
+    background-image: url('/assets/images/bg-curve-mobile.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: 40px;
+}
+.terceiro_card{
+    width: 100vh;
+    display: grid;
+    justify-content: center;
+    background-color: var(--cor-dois);
+}
+footer{
+    width: 100vh;
+    display: grid;
+    justify-content: center;
+    background-color: var(--cor-um);
+    margin: auto;
+}
+@media only screen and (max-width: 375px) {
+    body {
+        width: 375px;
+    }
 }

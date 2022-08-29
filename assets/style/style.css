@@ -36,6 +36,7 @@ section{
 header{
     display: flex;
     padding: 20px;
+    width: 350px;
     justify-content: space-between;
     align-items: center;   
 }
@@ -83,7 +84,6 @@ nav a{
 #send_email, #send_email2{
     background-color: var(--cor-tres);
     width: 300px;
-    margin: 0px 20px;
     border-radius: 3px;
     border: none;
     color: var(--cor-cinco);
@@ -94,7 +94,6 @@ nav a{
 }
 .email, .email2{
     width: 300px;
-    margin: 20px auto 0px auto;
     border-radius: 3px;
     border: 1px solid black;
     font-size: 12px;
@@ -228,6 +227,11 @@ nav a{
 svg path{
    fill: var(--cor-cinco);
 }
+svg:hover path {
+    fill: var(--cor-tres);
+    cursor: pointer;
+}
+
 .contatos{
     display: grid;
     gap: 10px;
@@ -237,6 +241,10 @@ ul{
     list-style-type: none;
     margin: 0;
     padding: 0
+}
+li:hover {
+    color: var(--cor-tres);
+    cursor: pointer;
 }
 li{
     line-height: 2rem;
@@ -260,19 +268,24 @@ li{
     width: fit-content;
     margin: auto;
 }
+.redes_sociais:hover{
+    cursor: pointer;
+    border-color: var(--cor-tres);
+}
+
 .primeiro_card{
-    width: 100vh;
+    width: 100vw;
     display: grid;
     justify-content: center;
 }
 .segundo_card{
-    width: 100vh;
+    width: 100vw;
     display: grid;
     justify-content: center;
     background-color: var(--cor-cinco);
 }
 .guard_decoracao{
-    width: 100vh;
+    width: 100vw;
     display: grid;
     justify-content: center;
     background-image: url('/assets/images/bg-curve-mobile.svg');
@@ -281,20 +294,170 @@ li{
     margin-top: 40px;
 }
 .terceiro_card{
-    width: 100vh;
+    width: 100vw;
     display: grid;
     justify-content: center;
     background-color: var(--cor-dois);
 }
 footer{
-    width: 100vh;
+    width: 100vw;
     display: grid;
     justify-content: center;
     background-color: var(--cor-um);
     margin: auto;
+    color: var(--cor-cinco);
 }
-@media only screen and (max-width: 375px) {
+@media only screen and (min-width: 375px) {
     body {
         width: 375px;
     }
+}
+
+@media only screen and (min-width: 800px) {
+    body{
+        width:800px;
+    }
+    header{
+        width: 750px;
+    }
+    section {
+            width: 800px;
+            padding-top: 35px;
+            padding-bottom: 35px;
+        }
+    .principal {
+        grid-template-areas:
+        "A A A A A B B B B"
+        "C C C C C B B B B"
+        "H H H H H B B B B"
+        "H H H H H B B B B";
+        }
+        .principal img{
+            grid-area: B;
+            padding: 0px;
+        }
+        .principal h1{
+            grid-area: A;
+            text-align: left;
+            width: auto;
+            margin: 10px;
+            margin-top: 35px;
+            padding: 10px;
+        }
+        .principal h2{
+            grid-area: G;
+        }
+        .principal p{
+            grid-area: C;
+            text-align: left;
+            width: auto;
+            margin: 10px;
+            padding: 10px;
+        }
+        #form_email{
+            gap: 10px;
+            grid-area: H;
+            grid-template-areas:
+            "D D D E E "
+            "F F F G G ";
+            margin: 10px;
+        }
+        .email{
+            grid-area: D;
+            padding: 5px;
+            margin: 10px;
+        }
+        #mensagem_email{
+            grid-area: F;
+            width: 250px;
+        }
+        #send_email{
+            grid-area: E;
+            padding: 5px;
+            width: 150px;
+            margin: 10px;
+        }
+        .depoimento{
+            justify-items: left;
+            padding: 0;
+            gap: 10px;
+            grid-template-areas:
+                    "A2 A2 A2 A2 B2 B2 B2 B2 B2"
+                    "C2 C2 C2 C2 B2 B2 B2 B2 B2"
+                    "C22 C22 C22 C22 B2 B2 B2 B2 B2"
+                    "C222 C222 C222 C222 B2 B2 B2 B2 B2"
+                    "H2 H2 H2 H2 B2 B2 B2 B2 B2"
+                    "H2 H2 H2 H2 B2 B2 B2 B2 B2";
+            }
+            .depoim_1{
+                grid-area: C2;
+                font-size: 10px;
+                width: auto;
+                padding: 0;
+            }
+            .depoim_2{
+                grid-area: C22;
+                font-size: 10px;
+                width: auto;
+                padding: 0;
+            }
+            .depoimento img{
+                grid-area: B2;
+                padding: 0px;
+            }
+            .depoimento h2{
+                grid-area: A2;
+                font-size: 24px;
+                padding: 0;
+            }
+            .see_how{
+                grid-area: C222;
+                padding: 0;
+            }
+            .depoimento_kyle{
+                grid-area: H2;
+                width: 200px;
+                margin-bottom: 35px;
+            }
+            .inscricao{
+                display: flex;
+                justify-content: space-around;
+            }
+            .layout_desktop{
+                text-align: left;
+                justify-content: left;
+            }
+            .titulo_desktop{
+                font-style: 28px;
+                width:350px;
+                margin: 10px;
+                text-align: left;
+            }
+
+            .layout_desktop p{
+                font-size: 10px;
+            }
+            .email2{
+                width:350px;
+                
+            }
+            #send_email2{
+                width: 100px;
+                
+            }
+            .quarto_card{
+                display: flex;
+                font-size: 10px;
+                justify-content: space-between;
+                width: 800px;
+
+            }
+            .logorodape svg path{
+                width: 100px;
+                height: 50px;
+                padding: 20px;
+               box-sizing: content-box;
+            }
+
+        }
 }
